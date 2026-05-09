@@ -596,66 +596,54 @@ header .masthead-subheading{
     opacity:1 !important;
     text-shadow:none !important;
 }
-/* =========================
-   VERSION MOBILE
-========================= */
+/* ===== VERSION MOBILE ===== */
 @media (max-width: 768px) {
 
+    /* Empêche le site de déborder */
     html, body {
         overflow-x: hidden;
         width: 100%;
     }
 
-    body {
-        text-align: center;
-    }
-
-    /* Barre menu */
-    .navbar-brand {
-        font-size: 1.5rem !important;
-        line-height: 1.2;
-    }
-
-    /* Section accueil */
+    /* Corrige la section principale */
     .masthead {
-        padding-top: 140px !important;
-        padding-bottom: 80px !important;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 80px;
     }
 
-    /* PHOTO */
+    /* Corrige la photo */
     .masthead-avatar {
-        width: 220px !important;
-        margin: 0 auto 20px auto !important;
-        display: block;
+        width: 220px;
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 
-    /* GRAND TITRE */
+    /* CORRECTION DU GROS TITRE */
     .masthead-heading {
         font-size: 3rem !important;
-        line-height: 1.1 !important;
+        line-height: 1.1;
         word-break: break-word;
+        padding: 0 10px;
+    }
+
+    /* Petit texte */
+    .masthead-subheading {
+        font-size: 1.2rem;
         padding: 0 15px;
     }
 
-    /* TEXTE dessous */
-    .masthead-subheading {
-        font-size: 1.2rem !important;
-        padding: 0 20px;
+    /* Menu mobile */
+    .navbar-brand {
+        font-size: 1.7rem;
     }
 
-    /* Sections */
-    section {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    /* Footer */
-    footer .row {
-        text-align: center;
-    }
-
-    footer .col-lg-4 {
-        margin-bottom: 30px;
+    /* Centre tout correctement */
+    .container,
+    .container-fluid,
+    .row {
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
 
