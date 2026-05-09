@@ -596,55 +596,29 @@ header .masthead-subheading{
     opacity:1 !important;
     text-shadow:none !important;
 }
-/* ===== VERSION MOBILE ===== */
+/* ===== CORRECTION MOBILE TITRE ===== */
 @media (max-width: 768px) {
 
-    /* Empêche le site de déborder */
-    html, body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    /* Corrige la section principale */
-    .masthead {
-        text-align: center;
-        padding-top: 120px;
-        padding-bottom: 80px;
-    }
-
-    /* Corrige la photo */
-    .masthead-avatar {
-        width: 220px;
-        max-width: 80%;
-        margin-bottom: 20px;
-    }
-
-    /* CORRECTION DU GROS TITRE */
     .masthead-heading {
-        font-size: 3rem !important;
-        line-height: 1.1;
-        word-break: break-word;
-        padding: 0 10px;
+        font-size: 2.8rem !important;
+        line-height: 0.95 !important;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 0 12px;
+        word-break: normal;
     }
 
-    /* Petit texte */
     .masthead-subheading {
         font-size: 1.2rem;
         padding: 0 15px;
+        text-align: center;
     }
 
-    /* Menu mobile */
-    .navbar-brand {
-        font-size: 1.7rem;
+    .masthead-avatar {
+        width: 230px;
+        max-width: 80%;
     }
 
-    /* Centre tout correctement */
-    .container,
-    .container-fluid,
-    .row {
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
 }
 
 hr {
