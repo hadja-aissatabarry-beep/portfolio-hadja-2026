@@ -168,6 +168,21 @@ header.masthead {
     font-family: 'Segoe UI', sans-serif;
 }
 .social-icons i{   color: white;   font-size: 1.5rem; }
+.project-content,
+
+.project-info,
+
+.project-text,
+
+.modal-content p{
+
+  color: #000 !important;
+
+  opacity: 1 !important;
+
+  visibility: visible !important;
+
+}
 
 .btn-social {
     width: 60px;
