@@ -704,18 +704,17 @@ img {
         overflow-x: hidden;
     }
 }
-/* Titre HERO propre sur mobile */
+/* VERSION MOBILE PROPRE */
 
 @media (max-width: 768px) {
 
     .masthead-heading {
-        font-size: 2.4rem !important;
-        line-height: 1.15 !important;
-        font-weight: 700 !important;
+        font-size: 2rem !important;
+        line-height: 1.1 !important;
         text-align: center !important;
-        max-width: 320px !important;
-        margin: 20px auto !important;
-        letter-spacing: 1px !important;
+        padding: 0 15px !important;
+        word-break: keep-all !important;
+        overflow-wrap: break-word !important;
     }
 
 }
