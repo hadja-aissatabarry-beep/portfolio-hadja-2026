@@ -704,7 +704,20 @@ img {
         overflow-x: hidden;
     }
 }
+/* Correction titre mobile */
 
+@media (max-width: 768px) {
+
+    .masthead-heading {
+        font-size: 2.8rem !important;
+        line-height: 1.2 !important;
+        text-align: center !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+        padding: 0 10px !important;
+    }
+
+}
 
 hr {
   margin: 1rem 0;
