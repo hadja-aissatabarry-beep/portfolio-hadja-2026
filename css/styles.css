@@ -596,54 +596,112 @@ header .masthead-subheading{
     opacity:1 !important;
     text-shadow:none !important;
 }
-/* ================= MOBILE RESPONSIVE ================= */
+/* =========================
+   RESPONSIVE MOBILE FIX
+========================= */
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Corrige le débordement Bootstrap */
+.container,
+.container-fluid,
+.row {
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow-x: hidden;
+}
+
+/* Images responsives */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
-    html,
     body {
-        overflow-x: hidden;
+        text-align: center;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.8rem !important;
+        line-height: 1.3;
+        text-align: center;
         width: 100%;
     }
 
-    .masthead {
-        padding-top: 120px;
-        padding-bottom: 60px;
-        text-align: center;
+    .navbar {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 
+    /* Section accueil */
+    .masthead {
+        padding-top: 130px !important;
+        padding-bottom: 70px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .masthead .container {
+        width: 100%;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Photo */
     .masthead-avatar {
         width: 220px !important;
-        margin-bottom: 30px;
+        margin: 0 auto 30px auto !important;
+        display: block;
     }
 
+    /* GRAND TITRE */
     .masthead-heading {
-        font-size: 3rem !important;
-        line-height: 1.1 !important;
+        font-size: 2.8rem !important;
+        line-height: 1.2 !important;
+        letter-spacing: 1px;
         text-align: center;
-        word-break: break-word;
-        padding: 0 15px;
-        margin-bottom: 20px;
+        margin: 25px auto !important;
+        padding: 0 10px;
+        width: 100%;
+        word-break: normal !important;
+        overflow-wrap: break-word;
     }
 
+    /* Sous-texte */
     .masthead-subheading {
         font-size: 1.2rem !important;
-        padding: 0 20px;
-        line-height: 1.6;
+        line-height: 1.7;
+        padding: 0 15px;
+        text-align: center;
     }
 
+    /* Divider étoile */
     .divider-custom {
-        margin: 1.5rem auto;
+        margin: 1.5rem auto !important;
+        width: 100%;
     }
 
-    .navbar-brand {
-        font-size: 1.8rem !important;
+    /* Footer */
+    .footer {
+        text-align: center;
     }
 
-    .container,
-    .container-fluid {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+    /* Corrige les sections */
+    section {
+        overflow-x: hidden;
     }
 }
 
