@@ -596,43 +596,67 @@ header .masthead-subheading{
     opacity:1 !important;
     text-shadow:none !important;
 }
-/* Empêche le débordement horizontal */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
-/* Centre le contenu */
-.container,
-.container-fluid,
-.row {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-/* Images responsives */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Corrige la section d'accueil mobile */
+/* =========================
+   VERSION MOBILE
+========================= */
 @media (max-width: 768px) {
 
-    .masthead {
-        text-align: center;
-        overflow: hidden;
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
     }
 
-    .masthead .container {
+    body {
+        text-align: center;
+    }
+
+    /* Barre menu */
+    .navbar-brand {
+        font-size: 1.5rem !important;
+        line-height: 1.2;
+    }
+
+    /* Section accueil */
+    .masthead {
+        padding-top: 140px !important;
+        padding-bottom: 80px !important;
+    }
+
+    /* PHOTO */
+    .masthead-avatar {
+        width: 220px !important;
+        margin: 0 auto 20px auto !important;
+        display: block;
+    }
+
+    /* GRAND TITRE */
+    .masthead-heading {
+        font-size: 3rem !important;
+        line-height: 1.1 !important;
+        word-break: break-word;
+        padding: 0 15px;
+    }
+
+    /* TEXTE dessous */
+    .masthead-subheading {
+        font-size: 1.2rem !important;
+        padding: 0 20px;
+    }
+
+    /* Sections */
+    section {
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .masthead-heading {
-        word-break: break-word;
+    /* Footer */
+    footer .row {
+        text-align: center;
     }
 
+    footer .col-lg-4 {
+        margin-bottom: 30px;
+    }
 }
 
 hr {
