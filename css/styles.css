@@ -596,7 +596,44 @@ header .masthead-subheading{
     opacity:1 !important;
     text-shadow:none !important;
 }
+/* Empêche le débordement horizontal */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
+/* Centre le contenu */
+.container,
+.container-fluid,
+.row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Images responsives */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Corrige la section d'accueil mobile */
+@media (max-width: 768px) {
+
+    .masthead {
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .masthead .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .masthead-heading {
+        word-break: break-word;
+    }
+
+}
 
 hr {
   margin: 1rem 0;
