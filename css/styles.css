@@ -124,6 +124,40 @@ header.masthead {
 .footer-social {
     margin-top: 20px;
 }
+/* Réduire le titre MES PROJETS */
+#portfolio .page-section-heading{
+    font-size: 2.2rem !important;
+    line-height: 2.4rem !important;
+}
+
+/* Version téléphone */
+@media (max-width: 768px){
+
+    #portfolio .page-section-heading{
+        font-size: 1.8rem !important;
+        line-height: 2rem !important;
+    }
+
+}
+/* Réduire les grands titres */
+#portfolio .page-section-heading,
+#about .page-section-heading,
+#contact .page-section-heading{
+    font-size: 2.2rem !important;
+    line-height: 2.4rem !important;
+}
+
+/* Téléphone */
+@media (max-width: 768px){
+
+    #portfolio .page-section-heading,
+    #about .page-section-heading,
+    #contact .page-section-heading{
+        font-size: 1.8rem !important;
+        line-height: 2rem !important;
+    }
+
+}
 
 .footer-social-title {
     font-size: 28px;
@@ -596,125 +630,33 @@ header .masthead-subheading{
     opacity:1 !important;
     text-shadow:none !important;
 }
-/* =========================
-   RESPONSIVE MOBILE FIX
-========================= */
+/* TITRE MOBILE CORRIGÉ */
 
-html,
-body {
-    width: 100%;
-    overflow-x: hidden;
+.mobile-title{
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    line-height: 1.1;
 }
 
-/* Corrige le débordement Bootstrap */
-.container,
-.container-fluid,
-.row {
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    overflow-x: hidden;
+/* Ordinateur */
+@media (min-width: 769px){
+
+    .mobile-title{
+        font-size: 2.5rem;
+    }
+
 }
 
-/* Images responsives */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+/* Téléphone */
+@media (max-width: 768px){
 
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-    body {
-        text-align: center;
-    }
-
-    /* Navbar */
-    .navbar-brand {
-        font-size: 1.8rem !important;
-        line-height: 1.3;
-        text-align: center;
-        width: 100%;
-    }
-
-    .navbar {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-
-    /* Section accueil */
-    .masthead {
-        padding-top: 130px !important;
-        padding-bottom: 70px !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .masthead .container {
-        width: 100%;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        margin: 0 auto !important;
-    }
-
-    /* Photo */
-    .masthead-avatar {
-        width: 220px !important;
-        margin: 0 auto 30px auto !important;
-        display: block;
-    }
-
-    /* GRAND TITRE */
-    .masthead-heading {
-        font-size: 2.8rem !important;
-        line-height: 1.2 !important;
-        letter-spacing: 1px;
-        text-align: center;
-        margin: 25px auto !important;
-        padding: 0 10px;
-        width: 100%;
-        word-break: normal !important;
-        overflow-wrap: break-word;
-    }
-
-    /* Sous-texte */
-    .masthead-subheading {
-        font-size: 1.2rem !important;
-        line-height: 1.7;
-        padding: 0 15px;
-        text-align: center;
-    }
-
-    /* Divider étoile */
-    .divider-custom {
-        margin: 1.5rem auto !important;
-        width: 100%;
-    }
-
-    /* Footer */
-    .footer {
-        text-align: center;
-    }
-
-    /* Corrige les sections */
-    section {
-        overflow-x: hidden;
-    }
-}
-/* VERSION MOBILE PROPRE */
-
-@media (max-width: 768px) {
-
-    .masthead-heading {
+    .mobile-title{
         font-size: 2rem !important;
-        line-height: 1.1 !important;
-        text-align: center !important;
-        padding: 0 15px !important;
-        word-break: keep-all !important;
-        overflow-wrap: break-word !important;
+        padding: 0 12px;
     }
 
 }
@@ -11449,7 +11391,7 @@ html {
   padding: 6rem 0;
 }
 .page-section .page-section-heading {
-  font-size: 2.25rem;
+  font-size: 2.2rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
