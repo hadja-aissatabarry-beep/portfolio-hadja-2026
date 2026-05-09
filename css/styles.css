@@ -596,27 +596,14 @@ header .masthead-subheading{
     opacity:1 !important;
     text-shadow:none !important;
 }
-/* ===== CORRECTION MOBILE TITRE ===== */
+/* ===== CORRECTION TITRE MOBILE ===== */
 @media (max-width: 768px) {
 
     .masthead-heading {
-        font-size: 2.8rem !important;
-        line-height: 0.95 !important;
-        letter-spacing: 1px;
+        font-size: 2.2rem !important;
+        line-height: 1.1 !important;
         text-align: center;
-        padding: 0 12px;
-        word-break: normal;
-    }
-
-    .masthead-subheading {
-        font-size: 1.2rem;
         padding: 0 15px;
-        text-align: center;
-    }
-
-    .masthead-avatar {
-        width: 230px;
-        max-width: 80%;
     }
 
 }
