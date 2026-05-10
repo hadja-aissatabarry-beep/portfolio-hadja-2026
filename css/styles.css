@@ -90,6 +90,8 @@
     scroll-behavior: smooth;
   }
 }
+/* CITATION PERSONNALISÉE */  .philosophy-section{     margin-top: 80px;     margin-bottom: 10px;     text-align: center;     padding: 0 20px; }  .philosophy-section p{     font-size: 1.3rem;     font-style: italic;     font-family: "Georgia", serif;     color: #7dd3fc;     line-height: 2rem;     letter-spacing: 1px; }
+/* CENTRES D’INTERET */  .interests-section{     margin-top: 100px;  padding-top: 50px;   text-align: center; }  .interests-section h3{     font-size: 1.5rem;     font-weight: 700;     margin-bottom: 20px;     color: white; }  .interests-list{     list-style: none;     padding: 0; }  .interests-list li{     margin-bottom: 12px;     font-size: 1.05rem;     color: #e2e8f0; }
 
 body {
   margin: 0;
